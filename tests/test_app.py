@@ -39,3 +39,10 @@ def test_post_events_adds_new_event(client):
 def test_post_event_missing_data_returns_error(client):
     response = client.post("/events", data=json.dumps({}), content_type="application/json")
     assert response.status_code == 400 or response.status_code == 422  # depending on your validation
+
+
+def test_unknown_route_returns_not_found(client):
+    response = client.get("/does-not-exist")
+    assert response.status_code == 404
+    data = response.get_json()
+    assert "error" in data

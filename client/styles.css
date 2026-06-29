@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #223042;
+}
+
+.app-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+input[type="text"] {
+  padding: 0.7rem;
+  border: 1px solid #cdd6e4;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+input[type="submit"] {
+  width: fit-content;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #1d4ed8;
+}
+
+.message {
+  min-height: 1.25rem;
+  margin-top: 0.75rem;
+  color: #b45309;
+  font-weight: 600;
+}
+
+#event-list {
+  padding-left: 1.2rem;
+}
+
+#event-list li {
+  margin-bottom: 0.5rem;
+}
